@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <title>Document</title>
+</head>
+<body class="bg-black" onload="myFunction()">
+    <main id=preload class="center" style="padding-top: 20%;">
+        <svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+                    <stop offset="50%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+            <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+            <path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+        </svg>
+    </main>
+<div id="postload" class="animate-bottom">
+    <div id="navbar">
+        <a style="float: left; transition: none; transform: none;"><img style="height: 17px; text-align: center;" src="tesla-seeklogo.com.png"</a>
+        <a class="active">PRE-ORDER NOW</a><span>&nbsp;/&nbsp;</span>
+        <a href="gallery.html">GALLERY</a><span>&nbsp;/&nbsp;</span>
+        <a href="specs.html">SPECS</a><span>&nbsp;/&nbsp;</span>
+        <a href="index.html">HOME</a>
+    </div>
+    <br><br><br>
+    <div class="flex justify-center items-center">
+        <div class="w-1/2 bg-black rounded shadow-2xl p-8 m-4">
+            <h1 class="block w-full text-center text-3xl text-white mb-6">Pre-Order</h1>
+            <form action="/four-o-four.html" method="post">
+                <div class="flex flex-col mb-4">
+                    <label class="mb-2 2xl text-neutral-300" for="first_name">Name</label>
+                    <input class="bg-neutral-700 border-solid border-neutral-500 py-2 px-3 text-neutral-300 focus:outline-none focus:border-sky-500 focus:ring-red-500 focus:ring-1" type="text" name="name" id="name">
+                </div>
+                <div class="flex flex-col mb-4">
+                    <label class="mb-2 2xl text-neutral-300" for="email">Email</label>
+                    <input class="bg-neutral-700 border-solid border-neutral-500 py-2 px-3 text-neutral-300 focus:outline-none focus:border-sky-500 focus:ring-red-500 focus:ring-1" type="email" name="email" id="email">
+                </div>
+                <button class="block bg-red-500 text-white text-lg mx-auto p-4 rounded" type="submit">Do it.</button>
+            </form><br>
+            <p class="text-neutral-600 text-xs">You will receive a confirmation e-mail in 15 minutes, For further questions contact at - 010✖✖✖✖✖✖✖</p>
+        </div>
+    </div>
+
+
+<script src="loader.js"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>

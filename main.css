@@ -1,0 +1,178 @@
+  /* basics */
+  :root {
+    --space-cadet: #2b2d42ff;
+    --manatee: #aab5c9ff;
+    --alice-blue: #edf2f4ff;
+    --imperial-red: #ef233cff;
+    --amaranth-red: #d90429ff;
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+    }
+    .block{
+      border-radius: 10px;
+    }
+  /* basics */
+
+  /* navbar */
+  #navbar {
+    overflow: hidden;
+    background-color: #000000;
+    font-family: "Josefin Sans", sans-serif;
+    padding: 0.5%;
+  }
+  
+  #navbar a,
+  span {
+    float: right;
+    display: block;
+    color: #edf2f4ff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  #navbar a:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #navbar a.active {
+    color: #ef233cff;
+  }
+  /* navbar */
+
+  /* scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+  }
+  ::-webkit-scrollbar-thumb:vertical {
+    background: rgba(255, 255, 255, 0.61);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+  }
+  /* scrollbar */
+
+  /* Preloader */
+    body {
+      background-color: var(--bg);
+      color: var(--fg);
+      font: 1em/1.5 "Josefin Sans", sans-serif;
+      height: 100vh;
+      display: grid;
+      transition: background-color 0.3s;
+    }
+    main {
+      padding: 1.5em 0;
+    }
+  
+        .ap {
+          width: 8em;
+          height: 16em;
+        }
+        .ap__ring {
+          stroke: hsla(var(--hue),10%,10%,0.15);
+          transition: stroke 0.3s;
+        }
+        .ap__worm1,
+        .ap__worm2 {
+          animation-duration: 3s;
+          animation-iteration-count: infinite;
+        }
+        .ap__worm1 {
+          animation-name: worm1;
+        }
+        .ap__worm2 {
+          animation-name: worm2;
+          visibility: hidden;
+        }
+      
+        /* Dark theme */
+        @media (prefers-color-scheme: dark) {
+          :root {
+            --bg: hsl(var(--hue),10%,10%);
+            --fg: hsl(var(--hue),10%,90%);
+          }
+          .ap__ring {
+            stroke: hsla(var(--hue),10%,90%,0.1);
+          }
+        }
+      
+        @keyframes worm1 {
+          from {
+            animation-timing-function: ease-in-out;
+            stroke-dashoffset: -87.96;
+          }
+          20% {
+            animation-timing-function: ease-in;
+            stroke-dashoffset: 0;
+          }
+          60% {
+            stroke-dashoffset: -791.68;
+            visibility: visible;
+          }
+          60.1%,
+          to {
+            stroke-dashoffset: -791.68;
+            visibility: hidden;
+          }
+        }
+        @keyframes worm2 {
+          from,
+          60% {
+            stroke-dashoffset: -87.96;
+            visibility: hidden;
+          }
+          60.1% {
+            animation-timing-function: cubic-bezier(0,0,0.5,0.75);
+            stroke-dashoffset: -87.96;
+            visibility: visible;
+          }
+          77% {
+            animation-timing-function: cubic-bezier(0.5,0.25,0.5,0.88);
+            stroke-dashoffset: -340;
+            visibility: visible;
+          }
+          to {
+            stroke-dashoffset: -669.92;
+            visibility: visible;
+          }
+        } 
+        
+    #postload {
+      display: none;
+      text-align: center;
+    }
+  /* Preloader */
+
+  /* table */
+    table.GenTable {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      border-collapse: collapse;
+      border-width: 2px;
+      border-color: #ffffff;
+      border-style: solid;
+      color: #ffffff;
+      align-items: center;
+    }
+    
+    table.GenTable td, table.GenTable th {
+      border-width: 2px;
+      border-color: #ffffff;
+      border-style: solid;
+      padding: 3px;
+    }
+    
+    table.GenTable thead {
+      color: #ff4141d2;
+    }
+    /* table */

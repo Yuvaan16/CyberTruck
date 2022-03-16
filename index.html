@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <title>Cybertruck.</title>
+</head>
+<body class="bg-black" onload="myFunction()">
+        <main id=preload class="center" style="padding-top: 20%;">
+            <svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                        <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                    </linearGradient>
+                    <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+                        <stop offset="50%" stop-color="hsl(223,90%,55%)" />
+                        <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                    </linearGradient>
+                </defs>
+                <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+                <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+                <path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+            </svg>
+        </main>
+    <style>
+    #front {
+    background: url("https://i.ibb.co/K7WgRgk/imageedit-1-4882851226.png") no-repeat;
+    overflow: hidden;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    color: rgb(237, 242, 244);
+    }
+    .xl, .lg{
+    color: #edf2f4d5;
+    }
+    body {
+    font-family: "Josefin Sans", sans-serif;
+    }
+    
+    </style>
+<div id="postload" class="animate-bottom">
+    <div id="navbar">
+        <a style="float: left; transition: none; transform: none;"><img style="height: 17px; text-align: center;" src="tesla-seeklogo.com.png"></a>
+        <a href="preordernow.html">PRE-ORDER NOW</a><span>&nbsp;/&nbsp;</span>
+        <a href="gallery.html">GALLERY</a><span>&nbsp;/&nbsp;</span>
+        <a href="specs.html">SPECS</a><span>&nbsp;/&nbsp;</span>
+        <a class="active">HOME</a>
+    </div>
+    <header id="front">
+        <div>
+          <div class="container-fluid text-center">
+              <br><br><br><br>
+            <p class="text-3xl">Introducing the all new Cybertruck.</p>
+            <p class="2xl">BETTER UTILITY THAN A TRUCK<br>MORE PERFORMANCE THAN A SPORTS CAR</p class="2xl">
+          </div>
+        </div>
+    </header>
+    <div class="container-fluid" style="padding: 5%;">
+        <p class="xl">EXOSKELETON</p class="xl">
+        <p class="lg">Cybertruck is built with an exterior shell made for ultimate durability and passenger protection. Starting with a nearly impenetrable exoskeleton, every component is designed for superior strength and endurance, from Ultra-Hard 30X Cold-Rolled stainless-steel structural skin to Tesla armor glass.</p class="lg">
+    </div>
+    <div class="flex flex-col justify-center items-center"><img src="https://i.ibb.co/8zn2CzB/164328427750542681.jpg"></div>
+    <div class="container-fluid text center" style="padding: 5%;">
+        <p class="xl">ULTRA-HARD 30X COLD-ROLLED STAINLESS STEEL</p>
+        <p class="lg">If there was something better, we'd use it. Help eliminate dents, damage and long-term corrosion with a smooth monochrome exoskeleton that puts the shell on the outside of the car and provides you and your passengers maximum protection.</p>
+    </div>
+    <video autoplay muted loop data-poster="performance.png" id="vid" class="center">
+    <source src="performance.mp4" type="video/mp4"/>
+    </video><br><br><br><br>
+    <script>
+    document.getElementById('vid').play();
+    </script>
+    <script src="loader.js"></script>
+</div>
+</body>
+</html>

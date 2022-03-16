@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <title>Document</title>
+</head>
+<body class="bg-black" onload="myFunction()">
+    <main id=preload class="center" style="padding-top: 20%;">
+        <svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+                    <stop offset="50%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+            <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+            <path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+        </svg>
+    </main>
+<div id="postload" class="animate-bottom">
+    <div id="navbar">
+        <a style="float: left; transition: none; transform: none;"><img style="height: 17px; text-align: center;" src="tesla-seeklogo.com.png"</a>
+        <a href="preordernow.html">PRE-ORDER NOW</a><span>&nbsp;/&nbsp;</span>
+        <a href="gallery.html">GALLERY</a><span>&nbsp;/&nbsp;</span>
+        <a class="active">SPECS</a><span>&nbsp;/&nbsp;</span>
+        <a href="index.html">HOME</a>
+    </div>
+    <header id="front">
+        <div class="container-fluid text-center">
+            <br><br><br><br>
+          <p class="text-3xl text-white">Specifications.</p>
+          <p class="2xl text-neutral-300" style="margin: 2%;">The powertrain for the dual motor AWD version is similar to the 2019 and newer "Raven" Tesla Model S and Model X, 
+              all of which have an inductive rear motor and the Model 3's permanent-magnet motor in front. Other versions are single-motor 
+              rear-wheel drive, or tri-motor with one front and two rear motors. Similar to other Tesla models, the Cybertruck can be pre-ordered with Full Self-Driving software upgrade, adding an 
+              additional US$10,000 to the price of the configuration.</p><br>
+        </div>
+  </header>
+  <p class="text-3xl text-white"></p>
+  <p class="lg text-neutral-300" style="margin: 3%;">
+  </p>
+  <div class="container-fluid text-center">
+  <table class="GenTable">
+    <thead>
+      <tr>
+        <th>Model</th>
+        <th>Range (EPA est.)</th>
+        <th>0-60 mph (0-97 km/h)	</th>
+        <th>Payload</th>
+        <th>Towing capacity</th>
+        <th>Price (USD)</th>
+        <th>Availability</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Single Motor RWD</td>
+        <td>400 km (250 mi)</td>
+        <td>&#60; 6.5 seconds</td>
+        <td>1,600 kg (3,500 lb)</td>
+        <td>3.4 t (7,500 lb)</td>
+        <td>$39,900</td>
+        <td>Late 2024</td>
+      </tr>
+      <tr>
+        <td>Dual Motor AWD </td>
+        <td>480 km (300 mi)</td>
+        <td>&#60; 4.5 seconds</td>
+        <td>1,600 kg (3,500 lb)</td>
+        <td>4.5 t (10,000 lb)</td>
+        <td>$49,900</td>
+        <td>2023/Early 2024</td>
+      </tr>
+      <tr>
+        <td>Tri Motor AWD	</td>
+        <td>800 km (500 mi)</td>
+        <td>&#60; 2.9 seconds</td>
+        <td>1,600 kg (3,500 lb)</td>
+        <td>6.4 t (14,000 lb)</td>
+        <td>$69,900</td>
+        <td>Late 2023</td>
+      </tr>
+      <tr>
+        <td>Quad Motor AWD</td>
+        <td>TBA</td>
+        <td>TBA</td>
+        <td>TBA</td>
+        <td>TBA</td>
+        <td>TBA</td>
+        <td>TBA</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+<script src="loader.js"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv = "refresh" content = "5; url = index.html" />
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <title>Document</title>
+</head>
+<body class="bg-black" onload="myFunction()">
+    <main id=preload class="center" style="padding-top: 20%;">
+        <svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+                    <stop offset="50%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+            <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+            <path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+        </svg>
+    </main>
+<div id="postload" class="animate-bottom">
+    <div id="navbar">
+        <a style="float: left; transition: none; transform: none;"><img style="height: 17px; text-align: center;" src="tesla-seeklogo.com.png"</a>
+        <a class="active">PRE-ORDER NOW</a><span>&nbsp;/&nbsp;</span>
+        <a href="gallery.html">GALLERY</a><span>&nbsp;/&nbsp;</span>
+        <a href="specs.html">SPECS</a><span>&nbsp;/&nbsp;</span>
+        <a href="index.html">HOME</a>
+    </div>
+
+    <header id="front" style="width: 50%; margin: auto; margin-top: 10%;">
+        <div>
+          <div class="container-fluid text-center">
+            <p class="text-3xl text-white">404 - Page Not Found</p>          
+            <p class="2xl text-neutral-300" style="margin: 2%;">You will be redirected to Home Page in 5 seconds</p><br>
+          </div>
+        </div>
+    </header>
+
+<script src="loader.js"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>

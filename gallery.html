@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css" />
+    <title>Document</title>
+</head>
+<body class="bg-black" onload="myFunction()">
+    <main id=preload class="center" style="padding-top: 20%;">
+        <svg class="ap" viewBox="0 0 128 256" width="128px" height="256px" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="ap-grad1" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="ap-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(193,90%,55%)" />
+                    <stop offset="50%" stop-color="hsl(223,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(253,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="ap__ring" r="56" cx="64" cy="192" fill="none" stroke="#ddd" stroke-width="16" stroke-linecap="round" />
+            <circle class="ap__worm1" r="56" cx="64" cy="192" fill="none" stroke="url(#ap-grad1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 263.89" />
+            <path class="ap__worm2" d="M120,192A56,56,0,0,1,8,192C8,161.07,16,8,64,8S120,161.07,120,192Z" fill="none" stroke="url(#ap-grad2)" stroke-width="16" stroke-linecap="round" stroke-dasharray="87.96 494" />
+        </svg>
+    </main>
+<div id="postload" class="animate-bottom">
+    <div id="navbar">
+        <a style="float: left; transition: none; transform: none;"><img style="height: 17px; text-align: center;" src="tesla-seeklogo.com.png"</a>
+        <a href="preordernow.html">PRE-ORDER NOW</a><span>&nbsp;/&nbsp;</span>
+        <a class="active">GALLERY</a><span>&nbsp;/&nbsp;</span>
+        <a href="specs.html">SPECS</a><span>&nbsp;/&nbsp;</span>
+        <a href="index.html">HOME</a>
+    </div>
+        <div id="carouselExampleControls" class="carousel slide relative w-2/3 center" data-bs-ride="carousel" style="padding-top: 5%;">
+            <div class="carousel-inner relative w-full overflow-hidden">
+              <div class="carousel-item relative float-left w-full">
+                 <img
+                  src="https://www.tesla.com/xNVh4yUEc3B9/05_Desktop.jpg"
+                  class="block w-full"
+                />
+              </div>
+              <div class="carousel-item active relative float-left w-full">
+                <img
+                  src="https://www.tesla.com/xNVh4yUEc3B9/09_Desktop.jpg"
+                  class="block w-full"
+                />
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="https://www.tesla.com/xNVh4yUEc3B9/06_Desktop.jpg"
+                  class="block w-full"
+                />
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="https://www.tesla.com/xNVh4yUEc3B9/07_Desktop.jpg"
+                  class="block w-full"
+                />
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="https://www.tesla.com/xNVh4yUEc3B9/08_Desktop.jpg"
+                  class="block w-full"
+                />
+              </div>
+              <div class="carousel-item relative float-left w-full">
+                <img
+                  src="https://www.tesla.com/xNVh4yUEc3B9/10_Desktop.jpg"
+                  class="block w-full"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev"
+            >
+              <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+              type="button"
+              data-bs-target="#carouselExampleControls"
+              data-bs-slide="next"
+            >
+              <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+<script src="loader.js"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>
+</body>
+</html>
